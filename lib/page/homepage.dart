@@ -18,8 +18,8 @@ class MyHomePage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: ratings(),
           ),
-          line(),
-          describe(),
+          divider(),
+          content(),
           Padding(
             padding: const EdgeInsets.all(25.0),
             child: material_cover(),
@@ -110,7 +110,7 @@ class MyHomePage extends StatelessWidget {
         ),
       );
 
-  Widget line() => Container(
+  Widget divider() => Container(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -135,7 +135,7 @@ class MyHomePage extends StatelessWidget {
         ),
       );
 
-  Widget describe() {
+  Widget content() {
     return Container(
       padding: EdgeInsets.only(left: 25, right: 25, top: 10, bottom: 10),
       child: Column(
